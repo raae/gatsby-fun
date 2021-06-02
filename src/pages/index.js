@@ -28,7 +28,7 @@ const IndexPage = () => {
           ) : (
             <li key={link.to}>
               <span>
-                <Link href={`${link.to}`}>{link.text}</Link>
+                <Link to={`${link.to}`}>{link.text}</Link>
                 {link.badge && <span aria-label="New Badge">NEW!</span>}
                 <p>{link.description}</p>
               </span>
@@ -44,11 +44,10 @@ export default IndexPage;
 
 // data
 const links = [
-  // {
-  //   text: "Tutorial",
-  //   url: "https://www.gatsbyjs.com/docs/tutorial/",
-  //   description:
-  //     "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  //   color: "#E95800",
-  // },
+  {
+    text: "Twinkle Component",
+    to: "twinkle",
+    description:
+      "A demo for Matt on how to possible reactify his twinkle code.",
+  },
 ];
