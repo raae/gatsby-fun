@@ -4,7 +4,7 @@ import { Grid, Box } from "@theme-ui/components";
 import { PageLayout } from "../components/PageLayout";
 import { Twinkle } from "../components/Twinkle";
 
-const CabaretProject = () => {
+const TwinklePage = () => {
   const twinkleChildren = Array(50)
     .fill()
     .map((_, key) => {
@@ -28,4 +28,4 @@ const CabaretProject = () => {
   );
 };
 
-export default CabaretProject;
+export default TwinklePage;
